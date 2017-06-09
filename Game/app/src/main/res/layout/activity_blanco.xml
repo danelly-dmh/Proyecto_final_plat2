@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blanco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.eduardo.game.Blanco">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                app:srcCompat="@drawable/cast_abc_scrubber_control_off_mtrl_alpha"
+                android:id="@+id/imgtibblanc"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:text="Los tiburones blancos se caracterizan por su cuerpo fusiforme y gran robustez, en contraste con las formas aplastadas que suelen lucir otros tiburones. El morro es cónico, corto y grueso. La boca, muy grande y redondeada, tiene forma de arco. Permanece siempre entreabierta, dejando ver al menos una hilera de dientes de la quijada superior y una o dos de la inferior, mientras el agua penetra en ella y sale continuamente por las branquias. Si este flujo se detuviese, el tiburón se ahogaría por carecer de opérculos para regular el paso correcto del agua, y se hundiría en la misma, ya que al no poseer tampoco vejiga natatoria se ve condenado a estar en continuo movimiento para evitarlo."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:name="com.google.android.youtube.player.YouTubePlayerFragment"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="107dp"
+                android:id="@+id/fragment" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
